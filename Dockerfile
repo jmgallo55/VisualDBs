@@ -3,6 +3,7 @@ FROM tiangolo/uwsgi-nginx:python3.6
 LABEL maintainer="Joseph Gallo <jmgallo55@gmail.com>"
 
 RUN pip install flask
+RUN pip install flask-wtf
 
 # By default, allow unlimited file sizes, modify it to limit the file sizes
 # To have a maximum of 1 MB (Nginx's default) change the line to:
