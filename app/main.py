@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for
 from flask import Flask
 from config import Config
-from app.forms import LoginForm
+#from app.forms import LoginForm
 
 app = Flask(__name__)
 app.config.from_object(Config)
