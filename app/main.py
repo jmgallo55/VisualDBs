@@ -1,11 +1,11 @@
 from flask import render_template, flash, redirect, url_for
 #from app import app
-#from flask import Flask
-#from config import Config
-from app.forms import LoginForm
+from flask import Flask
+from config import Config
+from forms import LoginForm
 
-#app = Flask(__name__)
-#app.config.from_object(Config)
+app = Flask(__name__)
+app.config.from_object(Config)
 
 
 @app.route('/')

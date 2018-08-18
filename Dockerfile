@@ -3,7 +3,13 @@ FROM tiangolo/uwsgi-nginx:python3.6
 LABEL maintainer="Joseph Gallo <jmgallo55@gmail.com>"
 
 RUN pip install flask
+#Webforms used for login and other pages
 RUN pip install flask-wtf
+#MYSQL support for DB
+#RUN pip install flask-sqlalchemy
+#be able to restructure data when migrating DB
+#RUN pip install flask-migrate
+
 
 # By default, allow unlimited file sizes, modify it to limit the file sizes
 # To have a maximum of 1 MB (Nginx's default) change the line to:
